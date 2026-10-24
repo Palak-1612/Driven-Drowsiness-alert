@@ -25,7 +25,7 @@ The Driver Drowsiness Detection System is a Python-based project designed to det
 ```text
 Driven Drowsiness Alert/
 ├── director.py
-├── Emailer.py
+├── dashboard.py
 ├── README.md
 └── requirements.txt
 ```
