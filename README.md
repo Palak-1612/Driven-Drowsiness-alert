@@ -1,72 +1,56 @@
-# 🚗 Driver Drowsiness Detection System
+🚗 Driver Drowsiness Alert System
+A real-time computer vision project that monitors a driver's face through a webcam and raises an alert when signs of drowsiness are detected, helping reduce the risk of fatigue-related road accidents.
+Built solo in 6 hours at Hacktoberfest Hack Day Jaunpur (powered by MLH) and awarded Best Participant 🏆.
+📌 Overview
+Drowsy driving is one of the leading causes of road accidents. This project uses a camera feed to track the driver's eyes, detects prolonged eye closure and triggers an alert so the driver can react in time. A Streamlit dashboard shows the live status and logged drowsiness events.
+✨ Features
+Real-time face and eye tracking using a webcam
+Drowsiness detection based on eye closure
+Instant alert when the driver appears drowsy
+Streamlit dashboard for live status
+Event logging to events.csv
+Modular code: detection logic and dashboard are separate
+🛠️ Tech Stack
+Python
+OpenCV: video capture and image processing
+MediaPipe: face and eye landmark detection
+Streamlit: dashboard UI
+NumPy
+📂 Project Structure
+Driven-Drowsiness-alert/
+├── detector.py        # Drowsiness detection logic
+├── dashboard.py       # Streamlit dashboard
+├── events.csv         # Logged drowsiness events
+├── status.json        # Live status shared with the dashboard
+├── requirements.txt   # Python dependencies
+└── README.md
+⚙️ Installation
+Clone the repository:
+git clone https://github.com/Palak-1612/Driven-Drowsiness-alert.git
+cd Driven-Drowsiness-alert
+Create and activate a virtual environment:
+python -m venv venv
 
-## 📌 Project Overview
-The Driver Drowsiness Detection System is a Python-based project designed to detect signs of driver drowsiness and help improve road safety. It can monitor the driver's eyes and trigger an alert when drowsiness is detected.
+# Windows
+venv\Scripts\activate
 
-## 🎯 Objectives
-- Detect driver drowsiness using a camera.
-- Monitor eye closure and signs of fatigue.
-- Generate an alert to warn the driver.
-- Help reduce the risk of accidents caused by drowsy driving.
-
-## 🛠️ Technologies Used
-- Python
-- OpenCV
-- Computer Vision
-- NumPy
-
-## ✨ Features
-- Real-time driver monitoring.
-- Eye and face detection.
-- Drowsiness alert system.
-- Modular Python code.
-
-## 📂 Project Structure
-```text
-Driven Drowsiness Alert/
-├── director.py
-├── dashboard.py
-├── README.md
-└── requirements.txt
-```
-
-*Update this structure to match your actual project files.*
-
-## ⚙️ Installation
-
-1. Clone the repository:
-   ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
-   ```
-
-2. Open the project folder:
-   ```bash
-   cd "Driven Drowsiness Alert"
-   ```
-
-3. Create and activate a virtual environment (optional if one already exists):
-   ```bash
-   python -m venv venv
-   ```
-
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## ▶️ How to Run
-Run the main Python file from your project directory:
-
-```bash
-python director.py
-```
-
-*Replace the command if your actual entry-point file is different.*
-
-## 🔒 Security
-- Do not upload passwords, API keys, email app passwords, or other secrets.
-- Keep sensitive credentials in environment variables or a local `.env` file.
-- Add `.env` and virtual environment folders to `.gitignore`.
-
-## 👩‍💻 Author
+# macOS / Linux
+source venv/bin/activate
+Install dependencies:
+pip install -r requirements.txt
+▶️ How to Run
+Open two terminals in the project folder (with the virtual environment activated).
+Terminal 1: start the detector
+python detector.py
+Terminal 2: start the dashboard
+streamlit run dashboard.py
+Make sure your webcam is connected and not being used by another app.
+🔮 Future Improvements
+Hardware alerts (buzzer / LED / vibration motor) using Arduino
+Yawn and head-pose detection for better accuracy
+Performance improvements in low-light conditions
+👩‍💻 Author
 Palak Singh
+Computer Science student | Python and AI/ML enthusiast
+GitHub: @Palak-1612
+LinkedIn: Palak Singh
