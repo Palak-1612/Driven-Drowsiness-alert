@@ -2,7 +2,7 @@
 
 A real-time computer vision project that monitors a driver's face through a webcam and raises an alert when signs of drowsiness are detected, helping reduce the risk of fatigue-related road accidents.
 
-Built **solo in 6 hours** at **Hacktoberfest Hack Day Jaunpur** (powered by MLH) and awarded **Best Participant** 🏆.
+Built **solo in 6 hours** at **Hacktoberfest Hack Day Jaunpur** (powered by MLH) and awarded **Best Participant** .
 
 ---
 
